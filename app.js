@@ -43,6 +43,7 @@ $(document).ready(function () {
         squares.enter().append('rect');
         squares
             .attr({
+              //perfect squares
               x: function(d) {return 500-length(d);},
               y: function(d) {return 300-length(d);},
               width: function(d) {return length(d)*2;},
