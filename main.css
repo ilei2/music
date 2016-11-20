@@ -7,7 +7,7 @@ body{
 
 h2 {
   font-family: 'Laila', cursive;
-  font-size: 60px;
+  font-size: 48px;
   color: white;
   text-align: center;
   line-height: 80%;
@@ -16,4 +16,16 @@ h2 {
 .button{
   display: table;
   margin: auto;
+}
+
+button{
+  color: white;
+  font-size: 18px;
+  background: none;
+  background-color: transparent;
+  border: none;
+}
+
+button:hover{
+  color: lightblue;
 }
