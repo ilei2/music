@@ -5,6 +5,7 @@ body{
 }
 
 h2 {
+  font-family: 'Calligraffitti', cursive;
   font-size: 60px;
   color: white;
   text-align: center;
@@ -14,5 +15,4 @@ h2 {
 .button{
   display: table;
   margin: auto;
-  align: center;
 }
