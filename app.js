@@ -14,8 +14,8 @@ $(document).ready(function () {
     // var frequencyData = new Uint8Array(analyser.frequencyBinCount);
     var frequencyData = new Uint8Array(200);
 
-    var svgHeight = 600,
-        svgWidth = 960;
+    var svgHeight = 800, //600
+        svgWidth = 960; //960
 
     var svg = d3.select('body').append('svg')
         .attr({
@@ -44,8 +44,8 @@ $(document).ready(function () {
         squares
             .attr({
               //perfect squares
-              x: function(d) {return 500-length(d);},
-              y: function(d) {return 300-length(d);},
+              x: function(d) {return screen.width/2-length(d);},
+              y: function(d) {return screen.height/2.5-length(d);},
               width: function(d) {return length(d)*2;},
               height: function(d) {return length(d)*2;},
               fill: 'none',
@@ -62,6 +62,6 @@ $(document).ready(function () {
     // run the loop
     renderChart();
     // just for blocks viewer size
-    d3.select(self.frameElement).style('height', '700px');
+    //d3.select(self.frameElement).style('height', '700px');
 
 }());
