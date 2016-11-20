@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Calligraffitti');
-
 body{
   background-image: url('https://awesomewallpapers.files.wordpress.com/2010/01/1920x1200_2.jpg');
   background-size: cover;
   align: center;
+  font-family: sans-serif;
 }
 
 h2 {
-  font-family: 'Calligraffitti', cursive;
+  font-family: 'Laila', cursive;
   font-size: 60px;
   color: white;
   text-align: center;
