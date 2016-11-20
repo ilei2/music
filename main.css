@@ -1,8 +1,15 @@
 body{
-  background-image: url('https://awesomewallpapers.files.wordpress.com/2010/01/1920x1200_2.jpg');
-  background-size: cover;
   align: center;
   font-family: sans-serif;
+}
+
+html{
+  background-image: url('https://awesomewallpapers.files.wordpress.com/2010/01/1920x1200_2.jpg');
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 h2 {
