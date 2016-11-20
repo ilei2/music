@@ -37,7 +37,7 @@ $(document).ready(function () {
                   .range([0, svgHeight/3+10]);
         var hueScale = d3.scale.linear()
                   .domain([0, d3.max(frequencyData)])
-                  .range([0, 200]); //360
+                  .range([0, 265]); //360
         var squares = svg.selectAll('rect')
                   .data(frequencyData);
         squares.enter().append('rect');
@@ -49,7 +49,7 @@ $(document).ready(function () {
               height: function(d) {return length(d)*2;},
               fill: 'none',
               'stroke-width': 2,
-              'stroke-opacity': 0.4,
+              'stroke-opacity': 0.5,
               stroke: function(d) { return d3.hsl(hueScale(d), 1, .5);}
             });
 
