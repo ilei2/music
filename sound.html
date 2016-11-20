@@ -11,6 +11,27 @@
 	  <body>
       <audio id="audioElement" src="closer.mp3"></audio>
   <div>
+		<select id="song">
+			<option value="">Choose Song</option>
+			<option value="closer.mp3">Closer</option>
+			<option value="24kclean.mp3">24K Magic</option>
+			<option value="heartsigh.mp3">Heartsigh</option>
+		</select>
+
+		<button type="button" onclick="getMusic()">Submit</button>
+		<script>
+		function getMusic(){
+			var select = document.getElementById("song");
+			var name = select.options[select.selectedIndex].value;
+			var audio = document.getElementById("audioElement");
+			audio.src = name;
+			audio.load();
+		}
+		</script>
+
+		<br>
+		<br>
+
     <button onclick="document.getElementById('audioElement').play()">Play the Audio</button>
     <button onclick="document.getElementById('audioElement').pause()">Pause the Audio</button>
     <button onclick="document.getElementById('audioElement').volume+=0.2">Increase Volume</button>
@@ -22,6 +43,3 @@
 	    <script src="app.js"></script>
 	  </body>
 </html>
-
-
-<!--./audio/Odesza - Above The Middle.mp3-->
