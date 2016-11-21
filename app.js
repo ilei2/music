@@ -23,9 +23,6 @@ $(document).ready(function () {
             width: svgWidth
         });
 
-    var screenWidth = window.innerWidth;
-    var screenHeight = window.innerHeight;
-
     // continuously loop and update chart with frequency data.
     function renderChart() {
         requestAnimationFrame(renderChart);
@@ -48,6 +45,10 @@ $(document).ready(function () {
             .attr({
               //perfect squares
               //screen.availHeight
+              //for testing only
+              //x: function(d) {return screen.width/2-length(d);},//{return window.innerWidth/2-length(d);},
+              //y: function(d) {return screen.height/2-length(d);},//{return window.innerHeight/2-length(d);},
+
               x: function(d) {return window.innerWidth/2-length(d);},//{return window.innerWidth/2-length(d);},
               y: function(d) {return window.innerHeight/2-length(d);},//{return window.innerHeight/2-length(d);},
               width: function(d) {return length(d)*2;},
