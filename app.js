@@ -46,17 +46,17 @@ $(document).ready(function () {
               //perfect squares
               //screen.availHeight
               //for testing only
-              //x: function(d) {return screen.width/2-length(d);},//{return window.innerWidth/2-length(d);},
-              //y: function(d) {return screen.height/2-length(d);},//{return window.innerHeight/2-length(d);},
+              x: function(d) {return screen.width/2-length(d);},//{return window.innerWidth/2-length(d);},
+              y: function(d) {return screen.height/2-length(d);},//{return window.innerHeight/2-length(d);},
 
-              x: function(d) {return window.innerWidth/2-length(d);},//{return window.innerWidth/2-length(d);},
-              y: function(d) {return window.innerHeight/2-length(d);},//{return window.innerHeight/2-length(d);},
+              //x: function(d) {return window.innerWidth/2-length(d);},//{return window.innerWidth/2-length(d);},
+              //y: function(d) {return window.innerHeight/2-length(d);},//{return window.innerHeight/2-length(d);},
               width: function(d) {return length(d)*2;},
               height: function(d) {return length(d)*2;},
               fill: 'none',
               'stroke-width': 2,
-              'stroke-opacity': 0.5,
-              stroke: function(d) { return d3.hsl(hueScale(d), 1, .5);}
+              'stroke-opacity': 0.3,
+              stroke: function(d) { return d3.hsl(hueScale(d), 1, .3);}
             });
 
         // scale things to fit
