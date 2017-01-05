@@ -46,12 +46,12 @@ $(document).ready(function () {
               //perfect squares
               //screen.availHeight
               //for testing only
-              x: function(d) {return screen.width/2-length(d);},//{return window.innerWidth/2-length(d);},
-              y: function(d) {return screen.height/3.5-length(d);},//{return window.innerHeight/2-length(d);},
+              //x: function(d) {return screen.width/2-length(d);},//{return window.innerWidth/2-length(d);},
+              //y: function(d) {return screen.height/3.5-length(d);},//{return window.innerHeight/2-length(d);},
 
               //PREVIOUS CODE AS OF 1/4/2017
-              //x: function(d) {return window.innerWidth/2-length(d);},//{return window.innerWidth/2-length(d);},
-              //y: function(d) {return window.innerHeight/2-length(d);},//{return window.innerHeight/2-length(d);},
+              x: function(d) {return window.innerWidth/2-length(d);},//{return window.innerWidth/2-length(d);},
+              y: function(d) {return window.innerHeight/3-length(d);},//{return window.innerHeight/2-length(d);},
               width: function(d) {return length(d)*2;},
               height: function(d) {return length(d)*2;},
               fill: 'none',
