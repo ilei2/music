@@ -34,7 +34,7 @@ $(document).ready(function () {
 
         var length = d3.scale.linear()
                   .domain([0, d3.max(frequencyData)])
-                  .range([0, svgHeight/3+10]);
+                  .range([0, svgHeight/(4)]); //previously (x/3)+10
         var hueScale = d3.scale.linear()
                   .domain([0, d3.max(frequencyData)])
                   .range([0, 265]); //360
@@ -46,11 +46,12 @@ $(document).ready(function () {
               //perfect squares
               //screen.availHeight
               //for testing only
-              //x: function(d) {return screen.width/2-length(d);},//{return window.innerWidth/2-length(d);},
-              //y: function(d) {return screen.height/2-length(d);},//{return window.innerHeight/2-length(d);},
+              x: function(d) {return screen.width/2-length(d);},//{return window.innerWidth/2-length(d);},
+              y: function(d) {return screen.height/3.5-length(d);},//{return window.innerHeight/2-length(d);},
 
-              x: function(d) {return window.innerWidth/2-length(d);},//{return window.innerWidth/2-length(d);},
-              y: function(d) {return window.innerHeight/2-length(d);},//{return window.innerHeight/2-length(d);},
+              //PREVIOUS CODE AS OF 1/4/2017
+              //x: function(d) {return window.innerWidth/2-length(d);},//{return window.innerWidth/2-length(d);},
+              //y: function(d) {return window.innerHeight/2-length(d);},//{return window.innerHeight/2-length(d);},
               width: function(d) {return length(d)*2;},
               height: function(d) {return length(d)*2;},
               fill: 'none',
