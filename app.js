@@ -51,7 +51,7 @@ $(document).ready(function () {
 
               //PREVIOUS CODE AS OF 1/4/2017
               x: function(d) {return window.innerWidth/2-length(d);},//{return window.innerWidth/2-length(d);},
-              y: function(d) {return window.innerHeight/2-length(d);},//{return window.innerHeight/2-length(d);},
+              y: function(d) {return window.innerHeight/2.5-length(d);},//{return window.innerHeight/2-length(d);},
               width: function(d) {return length(d)*2;},
               height: function(d) {return length(d)*2;},
               fill: 'none',
