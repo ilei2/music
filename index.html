@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 	<html>
 	  <head>
-	    <meta charset="utf-8" />
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+			<meta charset="utf-8" />
+			<meta http-equiv="Access-Control-Allow-Origin" content="*">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+			<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 			<link href="https://fonts.googleapis.com/css?family=Laila" rel="stylesheet">
 			<link rel="stylesheet" href="application.css" />
 			<link rel="stylesheet" type="text/css" href="main.css">
-	  </head>
+		</head>
+		<https-headers>
+			<header name="Access-Control-Allow-Origin" value="*" />
+			<header name="Access-Control-Allow-Headers" value="Origin, Accept, X-Requested-With, Content-Type, If-Modified-Since" />
+			<header name="Access-Control-Allow-Methods" value="GET, OPTIONS, HEAD" />
+		</https-headers>
 
 	  <body>
 			<h2>Music Visualization</h2>
@@ -17,6 +24,7 @@
 				var name = select.options[select.selectedIndex].value;
 				var audio = document.getElementById("audioElement");
 				audio.src = name;
+				audio.crossOrigin = "anonymous";
 				audio.load();
 				document.getElementById('audioElement').play();
 			}
@@ -27,7 +35,7 @@
 			<option value="">Choose a Song</option>
 			<option value="mp3/closer.mp3">Closer</option>
 			<option value="mp3/24kclean.mp3">24K Magic</option>
-			<option value="mp3/test.m4a">Used to Love You</option>
+			<option value="mp3/snake.mp3">You Know You Like It</option>
 		</select>
 
 		<button type="button" onclick="getMusic()"> Submit </button>
